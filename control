@@ -1,0 +1,9 @@
+Package: com.callumryan.smsstats2
+Name: SMS Stats 2
+Depends: mobilesubstrate, firmware (>= 7.0)
+Version: 1.0.2
+Architecture: iphoneos-arm
+Description: Stats built into the messages app
+Maintainer: Callum Ryan
+Author: Callum Ryan
+Section: Tweaks
