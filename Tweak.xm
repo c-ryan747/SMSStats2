@@ -15,14 +15,17 @@
 @property(retain, nonatomic) id chat;
 @property(readonly, assign, nonatomic) NSString* name;
 @end
+
 @interface CKConversationListController
 @property(nonatomic, assign) UINavigationItem *navigationItem;
 - (UINavigationController *)navigationController;
 @end
+
 @interface CKTranscriptController
 - (NSString *)title;
 - (UINavigationController *)navigationController;
 @end
+
 @interface CKMultipleRecipientTableViewCell : UIView{
 	NSMutableArray *_visibleButtons;
 }
@@ -35,7 +38,7 @@
 
 //Class stub
 @interface statsButton : UIButton		@end
-@implementation statsButton				@end
+@implementation statsButton			@end
 
 
 //Global vars
@@ -55,9 +58,9 @@ BOOL isBiteSMS = NO;
     	if ([button isKindOfClass:[statsButton class]]) {
     		//Correct positioning
     		if (isBiteSMS) {
-				[button setFrame:CGRectMake(self.frame.size.width - (MSHookIvar<NSMutableArray *>(self, "_visibleButtons").count * 40) ,7 , 36 , 36)];
+			[button setFrame:CGRectMake(self.frame.size.width - (MSHookIvar<NSMutableArray *>(self, "_visibleButtons").count * 40) ,7 , 36 , 36)];
     		} else {
-				[button setFrame:CGRectMake(self.frame.size.width - (MSHookIvar<NSMutableArray *>(self, "_visibleButtons").count * 40) ,4 , 36 , 36)];
+			[button setFrame:CGRectMake(self.frame.size.width - (MSHookIvar<NSMutableArray *>(self, "_visibleButtons").count * 40) ,4 , 36 , 36)];
     		}
     	}
     }
@@ -162,16 +165,3 @@ BOOL isBiteSMS = NO;
 	transcriptController = self;
 }
 %end
-
-
-
-
-
-
-
-
-
-
-
-
-
