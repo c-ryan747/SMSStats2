@@ -22,7 +22,7 @@
 
 @implementation CRViewController
 
-@synthesize data;
+@synthesize data = _data, name = _name;
 
 - (id)initWithName:(NSString *)passedName guid:(NSString *)passedGuid
 {
