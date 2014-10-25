@@ -15,7 +15,6 @@
     BOOL _gotData;
 }
 
-@property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSArray *data;
 
 - (void)loadStats;
@@ -23,7 +22,7 @@
 
 @implementation CRViewController
 
-@synthesize data;
+@synthesize data = _data;
 
 - (id)initWithName:(NSString *)passedName guid:(NSString *)passedGuid
 {
