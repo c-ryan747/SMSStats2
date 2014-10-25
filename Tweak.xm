@@ -333,7 +333,6 @@ NSArray *data = nil;
 		data = [CRStatsProvider statsForGuid:_guid];
 	    dispatch_async(dispatch_get_main_queue(), ^{
 	        _gotData = YES;
-	        NSLog(@"data: %@",data);
 			[self.tableView reloadSections:[NSIndexSet indexSetWithIndex:([self numberOfSectionsInTableView:self.tableView]-1)] withRowAnimation:UITableViewRowAnimationNone];
 	    });
 	});
