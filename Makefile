@@ -6,7 +6,7 @@ include /opt/theos/makefiles/common.mk
 
 TWEAK_NAME = SMSStats2
 SMSStats2_LIBRARIES = substrate
-SMSStats2_FILES = Tweak.xm CRViewController.m CRViewControllerAll.m FMDatabase.m FMDatabaseAdditions.m FMDatabasePool.m FMDatabaseQueue.m FMResultSet.m
+SMSStats2_FILES = Tweak.xm CRViewController.m CRViewControllerAll.m CRStatsProvider.m FMDatabase.m FMDatabaseAdditions.m FMDatabasePool.m FMDatabaseQueue.m FMResultSet.m
 SMSStats2_FRAMEWORKS = UIKit 
 SMSStats2_LDFLAGS = -lsqlite3
 ADDITIONAL_OBJCFLAGS = -fobjc-arc

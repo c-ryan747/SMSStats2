@@ -19,7 +19,7 @@
 }
 
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSMutableArray *allData;
+@property (nonatomic, strong) NSArray *allData;
 @property (nonatomic, strong) NSMutableArray *monthData;
 
 - (void)loadAllStats;
